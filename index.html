@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Corretor Imobiliario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script>
+        function filterPrompts() {
+            var input = document.getElementById('searchInput').value.toUpperCase();
+            var prompts = document.getElementsByClassName('prompt');
+            var sorry = document.getElementsByClassName('sorry')
+            for (var i = 0; i < prompts.length; i++) {
+                var h3 = prompts[i].getElementsByTagName('h3')[0];
+                if (h3.innerHTML.toUpperCase().indexOf(input) > -1) {
+                    prompts[i].style.display = "";
+                } else {
+                    prompts[i].style.display = "none";
+                }
+
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <img class="img-logo" src="/img/logo-branca.png" alt="logo" width="30%">
+        <div class="nav">
+            <nav>
+                <li><a href="">Hello</a></li>
+                <li><a href="">Hello</a></li>
+                <li><a href="">Hello</a></li>
+                <li><a href="">Hello</a></li>
+            </nav>
+        </div>
+        
+    </div><!--fim header-->
+    <div class="texts">
+        <div class="text-primary">
+            <h1>O Imóvel que você procura está aqui!</h1>
+            <h4>Nobrega Imóveis, as melhores oportunidades de imóveis em Belém!</h4>
+        </div>
+        <div class="text-secundary">
+            <h1>Imobiliária</h1>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, maxime rem dolorum, asperiores saepe
+                ducimus tempora iste architecto odit provident harum quisquam laboriosam voluptates ab similique pariatur
+                fugiat quibusdam assumenda quis doloremque natus nemo iure laborum. Ullam atque in autem esse. Sunt
+                praesentium eaque cumque hic sed odit ad consequatur, omnis tempore assumenda itaque ex adipisci quia nam,
+                ullam excepturi quos, laudantium distinctio placeat quisquam. Illum odit numquam saepe mollitia maiores modi
+                veritatis tempore omnis adipisci quae, voluptatibus voluptas voluptatum voluptate sequi impedit. Commodi
+                reiciendis ducimus, doloribus dignissimos sequi possimus eos nihil enim repellendus qui iusto, non
+            </h4>
+        </div>
+        <div class="seta-down"><a href="#search-bar"><i class="bi bi-arrow-down"></i></a></div>
+    </div>
+
+    <div id="search-bar" class="search-bar">
+        <input type="text" placeholder="Buscar Imoveis" id="searchInput" onkeyup="filterPrompts()">
+        <select id="categorySelect" class="select-category" onchange="filterPrompts()">
+            <option value="Todos">Todos</option>
+            <option value="Apartementos">Apartementos</option>
+            <option value="Kitnets">Kitnets</option>
+            <option value="Casas">Casas</option>
+        </select>
+    </div><!--fim search bar-->
+
+    <div id="" class="content">
+        <div class="prompt">
+            <div class="img-imovel">
+                <img class="container-image" src="/img/img-imovel.jpg" alt="Imagem do Imovel">
+            </div>
+            <div class="info-imovel">
+                <h3>Fabio</h3>
+                <p>R$ 1.000.000.00</p>
+                <div class="descricao">
+                    <p>4 quartos dois banheiros</p>
+                </div>
+                <a class="saiba-mais" href="#">Saiba Mais</a>
+            </div><!--prompt-->
+        </div>
+
+        <div class="prompt">
+            <div class="img-imovel">
+                <img class="container-image" src="/img/img-imovel.jpg" alt="Imagem do Imovel" width=>
+            </div>
+            <div class="info-imovel">
+                <h3>Victor</h3>
+                <p>R$ 1.000.000.00</p>
+                <div class="descricao">
+                    <p>4 quartos dois banheiros</p>
+                </div>
+                <a class="saiba-mais" href="#">Saiba Mais</a>
+            </div><!--prompt-->
+        </div>
+
+        <div class="prompt">
+            <div class="img-imovel">
+                <img class="container-image" src="/img/img-imovel.jpg" alt="Imagem do Imovel">
+            </div>
+            <div class="info-imovel">
+                <h3>Pedro</h3>
+                <p>R$ 1.000.000.00</p>
+                <div class="descricao">
+                    <p>4 quartos dois banheiros</p>
+                </div>
+                <a class="saiba-mais" href="#">Saiba Mais</a>
+            </div><!--prompt-->
+        </div>
+
+
+        <div class="prompt">
+            <div class="img-imovel">
+                <img class="container-image" src="/img/img-imovel.jpg" alt="Imagem do Imovel">
+            </div>
+            <div class="info-imovel">
+                <h3>Casa Linda</h3>
+                <p>R$ 1.000.000.00</p>
+                <div class="descricao">
+                    <p>4 quartos dois banheiros</p>
+                </div>
+                <a class="saiba-mais" href="#">Saiba Mais</a>
+            </div><!--prompt-->
+        </div>
+
+
+        <div class="prompt">
+            <div class="img-imovel">
+                <img class="container-image" src="/img/img-imovel.jpg" alt="Imagem do Imovel">
+            </div>
+            <div class="info-imovel">
+                <h3>Casa Linda</h3>
+                <p>R$ 1.000.000.00</p>
+                <div class="descricao">
+                    <p>4 quartos dois banheiros</p>
+                </div>
+                <a class="saiba-mais" href="#">Saiba Mais</a>
+            </div><!--prompt-->
+        </div>
+
+
+        <div class="prompt">
+            <div class="img-imovel">
+                <img class="container-image" src="/img/img-imovel.jpg" alt="Imagem do Imovel">
+            </div>
+            <div class="info-imovel">
+                <h3>Casa Linda</h3>
+                <p>R$ 1.000.000.00</p>
+                <div class="descricao">
+                    <p>4 quartos dois banheiros</p>
+                </div>
+                <a class="saiba-mais" href="#">Saiba Mais</a>
+            </div><!--prompt-->
+        </div>
+    </div>
+    <div class="localizacao">
+
+        <div class="Local">
+            <p><i class="bi bi-geo-alt-fill"></i> Av exemplo, no térreo do exemplo, entre * de Abril e * de Maio,
+                Exemplo.</p>
+        </div>
+        <div class="Horario">
+            <p><i class="bi bi-calendar-check"></i>Atendimento: Segunda a Sexta de *h as *h e Sábado de *h as *h</p>
+        </div>
+        <div class="Fone">
+            <p><i class="bi bi-telephone-fill"></i>Fone: (91) *****-*****</p>
+        </div>
+    </div><!--Localizacao-->
+
+    <div class="footer">
+        <p>&copy; 2024. Todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>
